@@ -2,6 +2,7 @@
 title: "Pi Engine: BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC"
 author: "Sofiane SEKKAÏ"
 date: 2025-10-18
+**DOI:** [10.5281/zenodo.17388049](https://doi.org/10.5281/zenodo.17388049)
 ---
 
 # Résumé
