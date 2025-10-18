@@ -1,28 +1,32 @@
-# Pi Engine: BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC
+# Pi Engine — BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC
 
-But: calcul reproductible de π sur matériel low‑cost avec code open‑source.
-Noyaux: **BBP** (saut hex au rang *n*) + **Chudnovsky tuilé** (décimal, disque, checkpoints).
+**Goal:** Reproducible computation of π on low-cost hardware with open-source code.  
+**Cores:** **BBP** (hexadecimal jump at index *n*) + **tiled Chudnovsky** (decimal, disk-based, checkpointed).
 
-## Matériel cible
-Mini‑PC ≈ €150 : Intel Twin Lake N150 (Intel N150, 16 Go RAM). Toute machine x86_64 8–16 Go convient.
+## Target Hardware
+Mini-PC ≈ €150 — Intel Twin Lake N150 (Intel N150, 16 GB RAM).  
+Any x86_64 machine with 8–16 GB RAM is suitable.
 
-## Démos
+## Demos
 ```bash
-# Vérif spot (hex digit)
+# Spot check (single hex digit)
 python code/pi_engine.py bbp --index 1_000_000
 
-# 1000 décimales (mesuré)
+# 1000 decimal digits (timed)
 python code/pi_engine.py chud --digits 1000 --chunk 1000 --out runs/out/pi_1k.txt
 ```
 
-## Reproductibilité
-- Renseigner `results/experiments.csv` après chaque run.
-- Vérifier 10 positions avec `scripts/verifier.py START LENGTH`.
-- Hasher les sorties:
-```powershell
-Get-FileHash runs/out/pi_*.txt -Algorithm SHA256 | Tee-Object results/hashes.txt
-```
+## Reproducibility
+- Record each run in `results/experiments.csv`.  
+- Verify 10 positions using:
+  ```bash
+  python scripts/verifier.py START LENGTH
+  ```
+- Hash outputs:
+  ```powershell
+  Get-FileHash runs/out/pi_*.txt -Algorithm SHA256 | Tee-Object results/hashes.txt
+  ```
 
-## Limites
-- Pas un record Guinness. BBP = base 16 pour vérif ponctuelle.
-- Chudnovsky simple; pour >10^6 digits, installer `gmpy2` et régler `chunk`/`workers`.
+## Limitations
+- Not a Guinness record attempt. BBP operates in base 16 for spot verification.  
+- Simple Chudnovsky implementation; for >10⁶ digits, install `gmpy2` and adjust `chunk` / `workers`.
