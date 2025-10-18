@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17388049.svg)](https://doi.org/10.5281/zenodo.17388049)
 # Pi Engine: BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC
 
 But: calcul reproductible de π sur matériel low‑cost avec code open‑source.
