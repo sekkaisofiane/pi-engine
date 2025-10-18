@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Merci de citer ce logiciel si vous l'utilisez."
+title: "Pi Engine: BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC"
+authors:
+  - family-names: "SEKKAÏ"
+    given-names: "Sofiane"
+    affiliation: "Chercheur indépendant"
+    email: "contact@webishere.fr"
+    orcid: "0009-0005-0114-1010"
+version: "0.1.0"
+date-released: "2025-10-18"
+repository-code: "https://github.com/sekkaisofiane/pi-engine"
+license: MIT

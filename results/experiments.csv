@@ -1,0 +1,2 @@
+run_id,hardware,cpu,ram_gb,os,python,gmpy2,script,digits,chunk,workers,wall_time_s,peak_ram_mb,digits_per_s,bbp_checks_ok,hash_sha256,notes
+R001,Mini-PC Intel Twin Lake,N150,16,Windows 11,3.11,NO,pi_engine,1000,5000,1,0.5,50,2000,10/10,CD186B421D644A6827ABF3B74D12BF8E4E39AA1172A59E2662091660D672B00B,baseline

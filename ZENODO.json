@@ -1,0 +1,23 @@
+{
+  "title": "Pi Engine: BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC",
+  "description": "Reproducible π computation on €150 Intel N150 mini-PC using BBP for hex verification and tiled Chudnovsky for decimals, with checkpoints, hashes, and CSV metrics.",
+  "creators": [
+    {
+      "name": "Sofiane SEKKAÏ",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0005-0114-1010"
+    }
+  ],
+  "keywords": ["pi", "computation", "BBP", "Chudnovsky", "low-cost", "reproducible"],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "v0.1.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sekkaisofiane/pi-engine",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

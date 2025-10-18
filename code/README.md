@@ -1,18 +1,17 @@
-# Pi Engine: BBP hex-jumps + tiled Chudnovsky on a €150 Intel N150 mini-PC
+# Pi Engine — BBP & Chudnovsky on a €150 mini‑PC
 
 But: calcul reproductible de π sur matériel low‑cost avec code open‑source.
 Noyaux: **BBP** (saut hex au rang *n*) + **Chudnovsky tuilé** (décimal, disque, checkpoints).
-
-## Matériel cible
-Mini‑PC ≈ €150 : Intel Twin Lake N150 (Intel N150, 16 Go RAM). Toute machine x86_64 8–16 Go convient.
 
 ## Démos
 ```bash
 # Vérif spot (hex digit)
 python code/pi_engine.py bbp --index 1_000_000
 
-# 1000 décimales (mesuré)
+# 100k décimales (pédagogique)
 python code/pi_engine.py chud --digits 1000 --chunk 1000 --out runs/out/pi_1k.txt
+
+python code/pi_engine_pro.py --digits 1000 --workers 2 --chunk 1000 --checkpoint runs/cp/cp.json --out runs/out/pi_1k.txt
 ```
 
 ## Reproductibilité

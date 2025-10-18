@@ -1,0 +1,11 @@
++-------------+        verify (random)        +------------------+
+|  BBP jump   | <---------------------------- |  Output blocks   |
+|  hex digit  |                               |  decimals (file) |
++------+------+                               +---------+--------+
+       |                                                  ^
+       |                                                  |
+       v                                                  |
++------+------------------------+        checkpoints      |
+|  Tiled Chudnovsky (decimal)   | -----------------------+
+|  chunked sum -> stream to disk|
++-------------------------------+
